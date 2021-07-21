@@ -9,4 +9,4 @@ router.post('/books', controllers.createBook)
 router.put('/books/:id', controllers.updateBook)
 router.delete('/books/:id', controllers.deleteBook)
 
-export default router
+export default router;

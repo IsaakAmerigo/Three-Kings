@@ -1,19 +1,18 @@
-import express from 'express'
-import logger from 'morgan'
-import cors from 'cors'
-
-const PORT = process.env.PORT || 3000;
-
 import db from './db/connection.js'
-import routes from './routes/index.js'
+import booksRoutes from './routes/books.js'
+
+import express from 'express'
+import cors from 'cors'
+import logger from 'morgan'
 
 const app = express()
+const PORT = process.env.PORT || 3000;
 
 app.use(express.json())
 app.use(cors())
 app.use(logger('dev'))
 
-app.use("/api", routes)
+app.use('/api', booksRoutes)
 
 db.on('connected', () => {
   console.log('Connected to MongoDB!')
