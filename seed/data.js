@@ -25,7 +25,7 @@ const insertData = async () => {
         "title": "Tree of Qliphoth",
         "author": "Asenath Mason",
         "genre": "Left-Hand-Path",
-        "imgURL": "",
+        "imgURL": "https://i.imgur.com/NZlu3JO.jpg",
         "description": "'Tree of Qliphoth' is the third anthology by the Temple of Ascending Flame, exploring the dark side of the Qabalistic Tree as a map of Draconian Initiation. In essays, rituals and other expressions of personal research and experience, magicians and initiates of the Draconian Tradition discuss the realms of the Nightside, teachings and gnosis of its dark denizens, as well as practical methods developed both within the Temple and through their individual work. Material included in this book will give the reader a foretaste of these forces and a glimpse of what you can expect while embarking on the self-initiatory journey through the labyrinths of the Dark Tree. Compiled and edited by Asenath Mason, the book contains contributions from active magicians, students, and practitioners of the Left Hand Path: Rev Bill Duvendack, Edgar Kerval, Christiane Kliemannel, Pairika-Eva Borowska, M. King, Calia van de Reyn, Leonard Dewar, Mafra Lunanigra, N.A:O, S.TZE. Swan, and Zeis Araujo.", 
       },
       {
