@@ -1,0 +1,15 @@
+#head {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.links {
+  display: flex;
+flex-direction: column-reverse;
+justify-content: space-around;
+}
