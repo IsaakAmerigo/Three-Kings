@@ -20,8 +20,9 @@ const BookCards = () => {
     .map((book, index) =>
       index < 8 ? (
         <BookCard
-          _id={book._id}
-          name={book.name}
+        
+          title={book.title}
+          author={book.author}
           imgURL={book.imgURL}
           key={index}
         />

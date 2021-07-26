@@ -3,13 +3,12 @@ import './Books.css'
 
 import Book from '../../components/Book/Book'
 import BookCards from '../../components/BookCards/BookCards'
-// import Search from '../../components/Search/Search'
 import { AZ } from "../../utils/sort"
 import Sort from '../../components/Sort/Sort'
 import Layout from '../../components/Layout/Layout'
 import { getBooks } from '../../services/books'
 
-const Books = () => {
+const Books = (props) => {
   const [books, setBooks] = useState([])
   const [searchResult, setSearchResult] = useState([])
   const [applySort, setApplySort] = useState(false)
@@ -42,35 +41,39 @@ const Books = () => {
     setApplySort(false)
   }
 
-  // const handleSearch = (event) => {
-  //   const results = books.filter((book) =>
-  //     book.name.toLowerCase().includes(event.target.value.toLowerCase())
-  //   )
-  //   setSearchResult(results)
-  //   setApplySort(true)
-  // }
+  const handleSearch = (event) => {
+    const results = books.filter((book) =>
+      book.name.toLowerCase().includes(event.target.value.toLowerCase())
+    )
+    setSearchResult(results)
+    setApplySort(true)
+  }
 
   const handleSubmit = (event) => event.preventDefault()
 
   return (
     <Layout>
-      {/* <Search onSubmit={handleSubmit} handleSearch={handleSearch} /> */}
+      {/* <Search onSubmit={handleSubmit} handleSearch={handleSearch} />  */}
       <Sort onSubmit={handleSubmit} handleSort={handleSort} />
       <div className='books'>
         {searchResult.map((book, index) => {
+
           return (
             <Book
-              _id={book._id}
-              name={book.name}
+              // _id={book._id}
+              title={book.title}
+              author={book.author}
               imgURL={book.imgURL}
-              price={book.price}
               key={index}
             />
           )
+          
         })}
       </div>
       <div>
-        <BookCards />
+        <h1>books page</h1>
+
+        <BookCards books={books}/>
       </div>
     </Layout>
   )
