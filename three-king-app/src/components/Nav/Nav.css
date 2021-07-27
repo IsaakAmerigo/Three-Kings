@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   background: gray;
-  height: 40px;
+  height: 60px;
   font-size: 30px;
   font-family: 'Oldenburg', cursive;
 }
@@ -12,8 +12,9 @@
   flex-direction: row;
 }
 
-.links {
+#link {
   display: flex;
 flex-direction: row;
 justify-content: space-evenly;
+margin-top: 7px;
 }

@@ -3,6 +3,7 @@ import React from 'react'
 import Home from './screens/Home/Home'
 import Books from './screens/Books/Books'
 import { Route, Switch } from 'react-router-dom'
+import Footer from './components/Footer/Footer'
 
 const App = () => {
 
@@ -11,9 +12,11 @@ return(
   <Switch>
     <Route exact path="/" component={Home} />
     <Route exact path="/books" component={Books} />
-    
+
   
   </Switch>
+  
+  
   </div>
 )
 }

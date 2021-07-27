@@ -5,8 +5,8 @@ const Book = (props) => {
   return (
 <div className="card">
 <Link>
-<div className="card-image">
-<img src={props.imgURL} alt={props.title}></img>
+<div>
+<img className="card-image" src={props.imgURL} alt={props.title}></img>
 </div>
 <div className="card-info">
 <p>{props.title}</p>

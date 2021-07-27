@@ -13,9 +13,14 @@
   transform: scale(1.02);
   opacity: .9;
 }
+.card{
+width: 250px;
+height: 300px;
+}
 
-.book-image {
-  width: 300px;
+.card-image {
+  width: 150px;
+  height: 250px;
 }
 
 .book-title {

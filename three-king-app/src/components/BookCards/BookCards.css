@@ -16,6 +16,8 @@
   margin-top: 40px;
 }
 
+
+
 @media (max-width: 500px) {
   .book-cards {
       width: 90vw;
