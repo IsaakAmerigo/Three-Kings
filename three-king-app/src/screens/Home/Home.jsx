@@ -1,4 +1,5 @@
 import './Home.css'
+import Nav from '../../components/Nav/Nav'
 
 const Home = () => {
   return(
