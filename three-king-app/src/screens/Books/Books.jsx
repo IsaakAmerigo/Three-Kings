@@ -2,6 +2,7 @@ import './Books.css'
 import getBooks from '../../services/books'
 import BookCards from '../../components/BookCards/BookCards'
 import { useEffect } from 'react'
+import Nav from '../../components/Nav/Nav'
 
 const Books = () => {
 useEffect(() => {
@@ -14,6 +15,7 @@ fetchBooks()
 
   return(
 <div>
+  <Nav />
 <BookCards />
 <h1> Library page </h1>
 </div>
