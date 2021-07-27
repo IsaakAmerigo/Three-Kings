@@ -5,6 +5,11 @@
   height: 100%;
   width: 100%;
   justify-content: space-evenly;
+  font-family: 'Oldenburg', cursive;
+text-align: center;
+border: 5px solid gray;
+color: rgb(0, 0, 0);
+background: gray;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -13,7 +18,7 @@ input:focus, textarea:focus, select:focus {
 
 input, textarea {
   font-size: 48px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Oldenburg', cursive;
   border-top-style: hidden;
   border-right-style: hidden;
   border-left-style: hidden;
@@ -22,45 +27,45 @@ input, textarea {
 
 textarea {
   font-size: 24px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Oldenburg', cursive;
 }
 
 .input-title {
   font-size: 48px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Oldenburg', cursive;
 }
 
 .input-author {
   padding-left: 10px;
   font-size: 24px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Oldenburg', cursive;
 }
 
 .input-path {
   font-size: 48px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Oldenburg', cursive;
 }
 
 .input-image-link {
   font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Oldenburg', cursive;
 }
 
 
 .textarea-description {
   font-size: 48px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Oldenburg', cursive;
 }
 
-.submit-button {
+.save-button {
   font-size: 22px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Oldenburg', cursive;
   height: 40px;
   margin-top: 40px;
   background-color: black;
-  color: white;
+  color: rgb(255, 255, 255);
   border: none;
-  box-shadow: 2px 2px 10px 2px #CECECE;
+  box-shadow: 2px 2px 10px 2px #000000;
   cursor: pointer;
 }
 

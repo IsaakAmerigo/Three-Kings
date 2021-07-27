@@ -1,15 +1,19 @@
 #head {
   display: flex;
   justify-content: space-around;
+  background: gray;
+  height: 40px;
+  font-size: 30px;
+  font-family: 'Oldenburg', cursive;
 }
 
 .nav {
   display: flex;
-  flex-direction: column-reverse;
+  flex-direction: row;
 }
 
 .links {
   display: flex;
-flex-direction: column-reverse;
-justify-content: space-around;
+flex-direction: row;
+justify-content: space-evenly;
 }

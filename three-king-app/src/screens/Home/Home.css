@@ -1,3 +1,20 @@
+#oldbook {
+width: 900px;
+
+}
+
+.library-button {
+  font-size: 22px;
+  font-family: 'Oldenburg', cursive;
+  height: 40px;
+  margin-top: 40px;
+  background-color: black;
+  color: white;
+  border: none;
+  box-shadow: 2px 2px 10px 2px #CECECE;
+  cursor: pointer;
+}
+
 @media (max-width: 500px) {
   .home {
       padding: 100px 40px;
