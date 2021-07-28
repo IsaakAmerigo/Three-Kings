@@ -20,8 +20,28 @@ fetchBook()
 
   return(
 <Layout>
-  <div>
-    <img className="" ></img>
+  <div className="book-info">
+<img className="book-image" src={book.imgURL} alt={book.title} />
+  </div>
+  <div className="title">
+{book.title}
+  </div>
+  <div className="author">
+  {book.author}
+  </div>
+  <div className="genre">
+  {book.genre}
+  </div>
+  <div className="description">
+  {book.description}
+  </div>
+  <div className="button-container">
+
+  <button className="edit-button">
+    <Link className="edit-link" to={`/books/${book._id}/edit`}>Edit</Link></button>
+
+  <button className="delete-button" onClick={() => deleteBook(book._id)}>Delete</button>
+
   </div>
 </Layout>
     )
