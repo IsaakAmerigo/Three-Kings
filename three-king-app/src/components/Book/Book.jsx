@@ -3,17 +3,22 @@ import { Link } from 'react-router-dom'
 
 const Book = (props) => {
   return (
-<div className="card">
+<div className="parent">
+
+  
 <Link>
-<div>
-<img className="card-image" src={props.imgURL} alt={props.title}></img>
+
+<div >
+<img className="child" id="one" className="card-image" src={props.imgURL} alt={props.title}></img>
 </div>
-<div className="card-info">
+<div className="child" id="two"  className="card-info">
 <p>{props.title}</p>
 <p>{props.author}</p>
 </div>
 
 </Link>
+
+
 </div>
   )
 }

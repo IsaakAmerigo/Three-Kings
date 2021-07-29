@@ -1,4 +1,4 @@
-.book {
+/* .book {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,21 +7,44 @@
   transition: 250ms all;
   padding: 20px;
   margin-bottom: 60px;
-}
+} */
 
-.book:hover {
+/* .book:hover {
   transform: scale(1.02);
   opacity: .9;
-}
-.card{
-width: 250px;
-height: 300px;
-}
+} */
+
 
 .card-image {
   width: 150px;
   height: 250px;
 }
+
+.parent {
+display: flex;
+  display: grid;
+flex-direction: row;
+  width: 250px;
+height: 300px;
+
+
+  grid-template-areas: 
+  "A A B B"
+  "A A B B"
+  "A A C C"
+  "A A C C";
+
+}
+
+#one {
+grid-area: A;
+}
+
+#two {
+  background: gray;
+  grid-area: B;
+}
+
 
 .book-title {
   font-size: 24px;
